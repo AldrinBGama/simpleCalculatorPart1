@@ -1,24 +1,16 @@
-import org.junit.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTest {
+class CalculatorTest extends Calculator {
 
     @org.junit.jupiter.api.Test
     void multiply() {
+        assertEquals(9,multiply(3,3));
+        assertEquals(32,multiply(2,2,2,2,2));
     }
 
     @org.junit.jupiter.api.Test
     void add() {
-    }
-
-    @Test
-    void multiply () {
-        assertEquals(50, .multiply(2,5,2,1));
-    }
-
-    @Test
-    void add () {
-        assertEquals(25, .add(5,5,10,5));
+        assertEquals(2, add(1,1));
+        assertEquals(5, add(1,1,1,1,1));
     }
 }
