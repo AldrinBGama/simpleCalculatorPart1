@@ -18,10 +18,10 @@ public class Calculator {
         int size = input.nextInt();
 
         System.out.println("Now please enter the numbers and I will operate them for you: ");
-        String [] numbers =  {};
+        String [] numbers =  new String[size];
         int i = 0;
         while (i <= size-1) {
-            numbers[i++] = String.valueOf(input.nextDouble());
+            numbers[i++] = String.valueOf(Double.valueOf(input.nextDouble()));
         }
         switch (opt) {
             case 1:
