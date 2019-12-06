@@ -18,17 +18,17 @@ public class Calculator {
         int size = input.nextInt();
 
         System.out.println("Now please enter the numbers and I will operate them for you: ");
-        String numbers = "";
+        String [] numbers =  {};
         int i = 0;
         while (i <= size-1) {
             numbers[i++] = String.valueOf(input.nextDouble());
         }
         switch (opt) {
             case 1:
-                multiply(Double.valueOf(numbers));
+                multiply(Double.valueOf(String.valueOf(numbers)));
                 break;
             case 2:
-                add(Double.valueOf(numbers));
+                add(Double.valueOf(String.valueOf(numbers)));
                 break;
         }
     }
